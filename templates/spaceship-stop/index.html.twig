@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Star wars Api (SWAPI) {% endblock %}</title>
+</head>
+<body>
+<div id="content">
+    {% block body %}
+        {% for ship in ships %}
+            {% for a in ship %}
+                <p>shipname: {{ a }}</p>
+            {% endfor %}
+            <p>{{ ship }}</p>
+        {% endfor %}}
+    {% endblock %}
+</div>
+</body>
+</html>
